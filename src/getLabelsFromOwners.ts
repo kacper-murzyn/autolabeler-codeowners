@@ -11,7 +11,7 @@ export async function getLabelsFromOwners(
   const labels: Set<Label> = new Set([])
   var re = /@DataDog/gi; 
   for (const owner of owners) {
-    var ddOwner = str.replace(re, "team")
+    var ddOwner = owner.replace(re, "team")
     labels.add({
       name: `${ddOwner}`,
       // From the documentation: https://octokit.github.io/rest.js/#octokit-routes-issues-create-label
