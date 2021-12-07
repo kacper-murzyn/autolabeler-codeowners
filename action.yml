@@ -1,5 +1,5 @@
-name: 'autolabeler-codeowners'
-description: 'Automatically label PRs based on CODEOWNERS'
+name: 'autolabeler-codeowners-dd'
+description: 'Automatically label PRs based on CODEOWNERS. Added DD specific label replace'
 author: 'Pratik Mallya'
 inputs:
   githubToken:
